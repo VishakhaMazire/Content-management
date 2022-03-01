@@ -1,0 +1,32 @@
+{
+  "name": "content-management-panel",
+  "version": "1.0.0",
+  "description": "The panel allows user to upload images, edit, view and delete.",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server",
+    "server": "nodemon server",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Vishakha Mazire",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "config": "^3.3.7",
+    "cookie-parser": "^1.4.5",
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "express-session": "^1.17.2",
+    "moment-timezone": "^0.5.33",
+    "mongoose": "^5.13.4",
+    "multer": "^1.4.4",
+    "node-cron": "^3.0.0",
+    "xlsx": "^0.17.0"
+  },
+  "devDependencies": {
+    "concurrently": "^6.3.0",
+    "nodemon": "^2.0.14"
+  }
+}
